@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEN XIN | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <div class="admin-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">SEN XIN</h2>
+            <p class="admin-label">ADMIN PANEL</p>
+
+            <nav>
+                <a href="#" class="nav-link active">Dashboard</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#brands" class="nav-link">Brands</a>
+                <a href="#orders" class="nav-link">Orders</a>
+                <a href="#customers" class="nav-link">Customers</a>
+            </nav>
+
+            <!-- Back to Website -->
+<a href="index.html" class="back-link">
+    ← Back to Website
+</a>
+
+<!-- Logout Button -->
+<button id="logoutBtn" class="logout-btn" type="button">
+    Logout
+</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome to SEN XIN Admin Panel</p>
+                </div>
+
+                <div class="admin-profile">
+                    <span>Admin</span>
+                </div>
+            </header>
+
+            <!-- Statistics -->
+            <section class="stats-container">
+
+                <div class="stat-card">
+                    <p>Total Orders</p>
+                    <h2 id="totalOrders">0</h2>
+                </div>
+
+                <div class="stat-card">
+                    <p>Pending Orders</p>
+                    <h2 id="pendingOrders">0</h2>
+                </div>
+
+                <div class="stat-card">
+                    <p>Completed Orders</p>
+                    <h2 id="completedOrders">0</h2>
+                </div>
+
+                <div class="stat-card">
+                    <p>Total Revenue</p>
+                    <h2 id="totalRevenue">$0.00</h2>
+                </div>
+
+            </section>
+
+<!-- BRAND MANAGEMENT -->
+<section class="orders-section" id="brands">
+
+    <div class="section-header">
+        <div>
+            <h2>Brand Management</h2>
+            <p>Manage your SEN XIN brands and logos</p>
+        </div>
+    </div>
+
+    <!-- ADD BRAND FORM -->
+    <div class="product-form-container">
+
+        <h3>Add New Brand</h3>
+
+        <form id="brandForm">
+
+            <div class="product-form-grid">
+
+                <div>
+                    <label for="brandName">Brand Name</label>
+                    <input
+                        type="text"
+                        id="brandName"
+                        placeholder="Enter brand name"
+                        required
+                    >
+                </div>
+
+                <div class="product-image-field">
+                    <label for="brandLogo">Brand Logo</label>
+                    <input
+                        type="file"
+                        id="brandLogo"
+                        accept="image/*"
+                        required
+                    >
+                    <img
+                        id="brandLogoPreview"
+                        src=""
+                        alt="Brand Logo Preview"
+                        style="display:none; max-width:150px; margin-top:10px;"
+                    >
+                </div>
+
+            </div>
+
+            <button type="submit" class="export-btn">
+                Add Brand
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- BRAND TABLE -->
+    <div class="table-wrapper">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Logo</th>
+                    <th>Brand Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="brandTableBody">
+                <tr>
+                    <td colspan="4" style="text-align:center;">
+                        No brands found.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</section>
+
+            <!-- PRODUCT MANAGEMENT -->
+<section class="orders-section" id="products">
+
+    <div class="section-header">
+        <div>
+            <h2>Product Management</h2>
+            <p>Manage your SEN XIN products</p>
+        </div>
+    </div>
+
+    <!-- ADD PRODUCT FORM -->
+    <div class="product-form-container">
+
+        <h3>Add New Product</h3>
+
+        <form id="productForm">
+
+            <div class="product-form-grid">
+
+                <div>
+                    <label for="productName">Product Name</label>
+                    <input
+                        type="text"
+                        id="productName"
+                        placeholder="Enter product name"
+                        required
+                    >
+                </div>
+
+                
+<div>
+    <label for="productCategory">Category</label>
+    <select id="productCategory" required>
+        <option value="">Select Category</option>
+        <option value="Phone Accessories">Phone Accessories</option>
+        <option value="Computer Accessories">Computer Accessories</option>
+    </select>
+</div>
+
+<div>
+    <label for="productBrand">Brand</label>
+    <select id="productBrand" required>
+        <option value="">Select Brand</option>
+        <option value="iPhone">iPhone</option>
+        <option value="Samsung">Samsung</option>
+        <option value="MacBook">MacBook</option>
+        <option value="Other">Other</option>
+    </select>
+</div>
+
+
+                <div>
+                    <label for="productPrice">Price ($)</label>
+                    <input
+                        type="number"
+                        id="productPrice"
+                        min="0"
+                        step="0.01"
+                        placeholder="Enter price"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="productStock">Stock Quantity</label>
+                    <input
+                        type="number"
+                        id="productStock"
+                        min="0"
+                        step="1"
+                        placeholder="Enter stock"
+                        required
+                    >
+                </div>
+
+                <div class="product-image-field">
+                   
+                    
+<div class="product-image-upload">
+    <label>Product Image</label>
+
+    <div id="imageDropArea" class="image-drop-area">
+        <input
+            type="file"
+            id="productImage"
+            accept="image/*"
+            hidden
+        >
+
+        <div id="uploadMessage">
+            <span class="upload-icon">📷</span>
+            <p><strong>Drag & Drop Image Here</strong></p>
+            <p>or click to choose an image</p>
+            <button type="button" id="chooseImageBtn">
+                Choose Image
+            </button>
+        </div>
+
+        <img
+            id="imagePreview"
+            src=""
+            alt="Product Preview"
+            style="display:none;"
+        >
+    </div>
+
+    <button
+        type="button"
+        id="removeImageBtn"
+        style="display:none;"
+    >
+        Remove Image
+    </button>
+</div>
+
+                </div>
+
+            </div>
+
+            <button type="submit" class="export-btn">
+                Add Product
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- PRODUCT SEARCH -->
+    <div class="product-search">
+        <input
+            type="text"
+            id="searchProduct"
+            placeholder="Search products..."
+        >
+    </div>
+
+    <!-- PRODUCT TABLE -->
+    <div class="table-wrapper">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="productTableBody">
+                <tr>
+                    <td colspan="7" style="text-align:center;">
+                        No products found.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</section>
+
+            <!-- Orders Table -->
+            <section class="orders-section" id="orders">
+
+                
+<div class="section-header">
+    <div>
+        <h2>Recent Orders</h2>
+        <p>Manage customer orders</p>
+    </div>
+
+    <button id="exportOrdersBtn" class="export-btn">
+        Export Orders
+    </button>
+</div>
+
+<!-- ORDER FILTERS -->
+<div class="order-filters">
+
+    <input
+        type="text"
+        id="searchOrder"
+        placeholder="Search Order ID, Customer or Phone..."
+    >
+
+    <select id="filterOrderStatus">
+        <option value="all">All Status</option>
+        <option value="Pending">Pending</option>
+        <option value="Confirmed">Confirmed</option>
+        <option value="Processing">Processing</option>
+        <option value="Completed">Completed</option>
+        <option value="Cancelled">Cancelled</option>
+    </select>
+
+    <div class="date-filter">
+        <label for="filterStartDate">From:</label>
+        <input type="date" id="filterStartDate">
+    </div>
+
+    <div class="date-filter">
+        <label for="filterEndDate">To:</label>
+        <input type="date" id="filterEndDate">
+    </div>
+
+    <button id="resetOrderFilters" class="reset-filter-btn">
+        Reset Filters
+    </button>
+
+</div>
+
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Phone</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="orderTableBody">
+                            <!-- Orders will appear here -->
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+<!-- CUSTOMER MANAGEMENT -->
+<section class="orders-section" id="customers">
+
+    <div class="section-header">
+        <div>
+            <h2>Customer Management</h2>
+            <p>Manage your SEN XIN customers</p>
+        </div>
+
+        <input
+            type="text"
+            id="searchCustomer"
+            placeholder="Search customer name or phone..."
+        >
+        <button id="exportCustomersBtn" class="export-btn"> Export Customers</button>
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Customer Name</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Total Orders</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="customerTableBody">
+                <!-- Customers will appear here -->
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<!-- CUSTOMER DETAILS MODAL -->
+<div id="customerModal" class="order-modal">
+
+    <div class="order-modal-content">
+
+        <div class="modal-header">
+            <h2>Customer Details</h2>
+
+            <button
+                id="closeCustomerModal"
+                class="close-modal"
+            >
+                &times;
+            </button>
+        </div>
+
+        <div id="customerDetailsContent"></div>
+
+    </div>
+
+</div>
+
+<!-- ORDER DETAILS MODAL -->
+<div id="orderModal" class="order-modal">
+
+    <div class="order-modal-content">
+
+        <div class="modal-header">
+            <h2>Order Details</h2>
+            <button id="closeOrderModal" class="close-modal">
+                &times;
+            </button>
+        </div>
+
+        <div id="orderDetailsContent">
+            <!-- Order details will appear here -->
+        </div>
+
+    </div>
+
+</div>
+
+
+        </main>
+
+    </div>
+
+    <script src="admin.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>

@@ -1,0 +1,1375 @@
+
+/* SEN XIN - Basic Website Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+/* Website Header */
+header {
+    background-color: #1746A2;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Website Logo */
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Navigation Hover */
+nav a:hover {
+    color: #63B9F5;
+}
+
+/* Home Section */
+.home-section {
+    background-color: #F2F8FF;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Main Heading */
+.home-section h2 {
+    color: #1746A2;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* Subtitle */
+.home-subtitle {
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Home Description */
+.home-section p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Explore Products Button */
+.home-button {
+    display: inline-block;
+    background-color: #1746A2;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Product Categories Section */
+.categories-section {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+/* Categories Heading */
+.categories-section h2 {
+    color: #1746A2;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Categories Description */
+.categories-section > p {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+/* Category Container */
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Category Card */
+.category-card {
+    background-color: #F2F8FF;
+    border: 1px solid #DCEBFA;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+/* Category Title */
+.category-card h3 {
+    color: #1746A2;
+    font-size: 20px;
+}
+
+/* Category Description */
+.category-card p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Category Hover Effect */
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(23, 70, 162, 0.15);
+}
+
+/* Products Section */
+.products-section {
+    background-color: #F7FAFF;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+/* Products Heading */
+.products-section h2 {
+    color: #1746A2;
+    font-size: 32px;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E0EAF5;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+/* Product Image */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* Product Name */
+.product-card h3 {
+    color: #1746A2;
+    font-size: 20px;
+}
+
+/* Product Description */
+.product-card p {
+    color: #555555;
+    font-size: 14px;
+}
+
+/* Product Price */
+.product-price {
+    font-weight: bold;
+    color: #1746A2 !important;
+}
+
+/* Product Button */
+.product-card button {
+    background-color: #1746A2;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Contact Link */
+.product-card a {
+    display: inline-block;
+    color: #1746A2;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Hover Effect */
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(23, 70, 162, 0.15);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #F2F8FF;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+/* Contact Heading */
+.contact-section h2 {
+    color: #1746A2;
+    font-size: 32px;
+}
+
+.contact-section > p {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Contact Card */
+.contact-card {
+    background-color: #FFFFFF;
+    border: 1px solid #DCEBFA;
+    border-radius: 12px;
+    padding: 25px;
+    width: 220px;
+}
+
+/* Contact Card Heading */
+.contact-card h3 {
+    color: #1746A2;
+    font-size: 20px;
+}
+
+/* Contact Text */
+.contact-card p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Contact Link */
+.contact-card a {
+    display: inline-block;
+    background-color: #1746A2;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.contact-card a:hover {
+    background-color: #63B9F5;
+}
+
+/* Website Footer */
+.website-footer {
+    background-color: #1746A2;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Footer Logo */
+.website-footer h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+/* Footer Text */
+.website-footer p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Footer Divider */
+.footer-line {
+    width: 80%;
+    height: 1px;
+    background-color: #63B9F5;
+    margin: 25px auto;
+}
+
+/* Copyright */
+.website-footer .copyright {
+    color: #DCEBFA;
+    font-size: 13px;
+}
+
+
+/* Button Hover */
+.home-button:hover {
+    background-color: #63B9F5;
+    color: #FFFFFF;
+}
+
+/* Responsive Design - Mobile */
+@media screen and (max-width: 768px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* Navigation */
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Home Section */
+    .home-section {
+        padding: 50px 20px;
+    }
+
+    .home-section h2 {
+        font-size: 28px;
+    }
+
+    /* Categories */
+    .categories-section {
+        padding: 40px 20px;
+    }
+
+    .category-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    /* Products */
+    .products-section {
+        padding: 40px 20px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    /* Contact */
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    /* Footer */
+    .website-footer {
+        padding: 30px 15px;
+    }
+}
+
+/* Global Design Improvements */
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Better Text Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Consistent Section Headings */
+section h2 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Consistent Section Spacing */
+section {
+    scroll-margin-top: 20px;
+}
+
+/* Global Button Styling */
+button {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #63B9F5;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+}
+
+/* Button Click Effect */
+button:active {
+    transform: translateY(0);
+}
+
+/* Contact Card Hover */
+.contact-card {
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(23, 70, 162, 0.12);
+}
+/* Footer Design Improvement */
+.website-footer {
+    background: linear-gradient(
+        135deg,
+        #1746A2,
+        #0E2F73
+    );
+}
+
+.website-footer h2 {
+    margin-bottom: 10px;
+}
+
+.website-footer .copyright {
+    margin-bottom: 0;
+}
+/* Sticky Website Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* Navigation Enhancement */
+nav a {
+    position: relative;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+/* Navigation Underline */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #63B9F5;
+    transition: width 0.3s ease;
+}
+
+/* Hover Underline */
+nav a:hover::after {
+    width: 100%;
+}
+/* SEN XIN Logo Enhancement */
+header h1 {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+header h1:hover {
+    color: #63B9F5;
+}
+/* Responsive Header Enhancement */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+/* Final Product Image Styling */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
+/* Final Layout Improvement */
+* {
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+/* Text Overflow Prevention */
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+/* Product Search Box */
+.product-search {
+    text-align: center;
+    margin: 25px 0;
+}
+
+#searchInput {
+    width: 80%;
+    max-width: 450px;
+    padding: 14px 18px;
+    border: 1px solid #63B9F5;
+    border-radius: 25px;
+    font-size: 15px;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: #1746A2;
+    box-shadow: 0 0 8px rgba(23, 70, 162, 0.2);
+}
+/* Shopping Cart */
+.cart-summary {
+    text-align: center;
+    margin: 20px 0;
+    color: #1746A2;
+    font-size: 18px;
+}
+
+#cartCount {
+    background-color: #1746A2;
+    color: #FFFFFF;
+    padding: 5px 12px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background-color: #1746A2;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #63B9F5;
+}
+/* Shopping Cart Product List */
+
+#cartItems {
+    list-style: none;
+    padding: 0;
+    max-width: 450px;
+    margin: 15px auto;
+}
+
+#cartItems li {
+    background-color: #F2F8FF;
+    border: 1px solid #D5E9FA;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    color: #1746A2;
+    text-align: left;
+}
+
+/* Remove Button */
+#cartItems li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+#cartItems button {
+    background-color: #E53935;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cartItems button:hover {
+    background-color: #B71C1C;
+}
+
+/* Product Price */
+.price {
+    color: #1746A2;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.quantity-controls button {
+    background-color: #1746A2;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.quantity-controls span {
+    font-weight: bold;
+}
+
+/* Shopping Cart Layout */
+#cartItems li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* =================================
+   SEN XIN - SHOPPING CART DESIGN
+================================= */
+
+/* Product Price */
+.price {
+    color: #1746A2;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Cart Product List */
+#cartItems {
+    list-style: none;
+    padding: 0;
+    max-width: 550px;
+    margin: 15px auto;
+}
+
+#cartItems li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    background-color: #F2F8FF;
+    border: 1px solid #D5E9FA;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #1746A2;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#cartItems .quantity-controls button {
+    background-color: #1746A2;
+    color: #FFFFFF;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Quantity Number */
+.quantity-controls span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Remove Button */
+#cartItems li > button {
+    background-color: #E53935;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Button Hover */
+#cartItems .quantity-controls button:hover {
+    background-color: #63B9F5;
+}
+
+#cartItems li > button:hover {
+    background-color: #B71C1C;
+}
+/* Hide Checkout Form Initially */
+.checkout-form {
+    display: none;
+}
+
+/* =================================
+   SEN XIN - CHECKOUT FORM DESIGN
+================================= */
+
+.checkout-form {
+    display: none;
+    max-width: 550px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #D5E9FA;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(23, 70, 162, 0.10);
+    text-align: left;
+}
+
+.checkout-form h3 {
+    color: #1746A2;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.checkout-form label {
+    display: block;
+    color: #1746A2;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D5E9FA;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #F8FBFF;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus,
+.checkout-form select:focus {
+    border-color: #1746A2;
+    box-shadow: 0 0 5px rgba(99, 185, 245, 0.5);
+}
+
+.checkout-form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+#placeOrder {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background-color: #1746A2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#placeOrder:hover {
+    background-color: #63B9F5;
+    color: #FFFFFF;
+}
+
+
+/* =========================================
+   SEN XIN - COMPLETE RESPONSIVE DESIGN
+========================================= */
+
+
+/* TABLET - Screen width up to 768px */
+
+@media screen and (max-width: 768px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    /* Navigation */
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    /* Home Section */
+    .home-section {
+        padding: 50px 20px;
+    }
+
+    .home-section h2 {
+        font-size: 28px;
+    }
+
+    .home-subtitle {
+        font-size: 18px;
+    }
+
+    /* Categories */
+    .categories-section {
+        padding: 40px 20px;
+    }
+
+    .category-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .category-card {
+        width: calc(50% - 10px);
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    /* Products */
+    .products-section {
+        padding: 40px 20px;
+    }
+
+    .product-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: calc(50% - 10px);
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    /* Contact */
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .contact-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .contact-card {
+        width: calc(50% - 10px);
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    /* Shopping Cart */
+    .cart-summary {
+        padding: 0 15px;
+        font-size: 16px;
+    }
+
+    #cartItems {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    /* Checkout Form */
+    .checkout-form {
+        width: 100%;
+        max-width: 550px;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    /* Footer */
+    .website-footer {
+        padding: 30px 20px;
+    }
+}
+
+
+/* MOBILE - Screen width up to 480px */
+
+@media screen and (max-width: 480px) {
+
+    /* Header */
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    /* Navigation */
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    /* Home Section */
+    .home-section {
+        padding: 40px 15px;
+    }
+
+    .home-section h2 {
+        font-size: 25px;
+    }
+
+    .home-subtitle {
+        font-size: 16px;
+    }
+
+    .home-section p {
+        font-size: 14px;
+    }
+
+    /* Section Headings */
+    section h2 {
+        font-size: 25px;
+    }
+
+    /* Categories */
+    .categories-section {
+        padding: 35px 15px;
+    }
+
+    .category-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Products */
+    .products-section {
+        padding: 35px 15px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+
+    /* Product Search */
+    #searchInput {
+        width: 100%;
+        max-width: 350px;
+        box-sizing: border-box;
+    }
+
+    /* Contact */
+    .contact-section {
+        padding: 35px 15px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Shopping Cart */
+    .cart-summary {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    #cartItems li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quantity-controls {
+        gap: 15px;
+    }
+
+    /* Checkout Form */
+    .checkout-form {
+        width: 100%;
+        padding: 18px;
+        margin: 20px auto;
+    }
+
+    .checkout-form h3 {
+        font-size: 20px;
+    }
+
+    /* Footer */
+    .website-footer {
+        padding: 25px 15px;
+    }
+
+    .website-footer h2 {
+        font-size: 24px;
+    }
+}
+
+/* TABLET RESPONSIVE - 769px to 1024px */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .product-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: calc(50% - 10px);
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+}
+
+/* =================================
+   SEN XIN - PROFESSIONAL PRODUCT CARDS
+================================= */
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 450px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCEBFA;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(23, 70, 162, 0.08);
+    transition: all 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    color: #1746A2;
+    font-size: 19px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.product-card p {
+    line-height: 1.6;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(23, 70, 162, 0.15);
+}
+/* SEN XIN - Product Buttons */
+.product-card button {
+    width: 100%;
+    min-height: 40px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+
+/* View Details Button */
+.product-card button:not(.add-to-cart) {
+    background-color: #FFFFFF;
+    color: #1746A2;
+    border: 1px solid #1746A2;
+}
+
+/* Add to Cart Button */
+.product-card .add-to-cart {
+    background-color: #1746A2;
+    color: #FFFFFF;
+    border: none;
+}
+/* SEN XIN - Smaller Product Buttons */
+.product-card button {
+    width: 85%;
+    min-height: 36px;
+    padding: 8px 12px;
+    font-size: 13px;
+    margin: 6px 0;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* View Details */
+.product-card button:not(.add-to-cart) {
+    background-color: #FFFFFF;
+    color: #1746A2;
+    border: 1px solid #1746A2;
+}
+
+/* Add to Cart */
+.product-card .add-to-cart {
+    background-color: #1746A2;
+    color: #FFFFFF;
+    border: none;
+}
+/* SEN XIN - Compact Product Buttons */
+.product-card button {
+    width: 70%;
+    min-height: 32px;
+    padding: 6px 10px;
+    font-size: 12px;
+    margin: 5px 0;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* View Details */
+.product-card button:not(.add-to-cart) {
+    background-color: #FFFFFF;
+    color: #1746A2;
+    border: 1px solid #1746A2;
+}
+
+/* Add to Cart */
+.product-card .add-to-cart {
+    background-color: #1746A2;
+    color: #FFFFFF;
+    border: none;
+}
+/* SEN XIN - Product Details Popup */
+
+.product-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.product-modal-content {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-modal-content img {
+    width: 100%;
+    max-width: 250px;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-modal-content h2 {
+    color: #1746A2;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.product-modal-content .price {
+    color: #1746A2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-modal-content p {
+    line-height: 1.6;
+    color: #555555;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: none;
+    border: none;
+    color: #1746A2;
+    font-size: 30px;
+    cursor: pointer;
+}
+.checkout-form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+.no-product-image {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f5f9;
+    color: #64748b;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* SEN XIN - Mobile Product Grid */
+@media screen and (max-width: 480px) {
+
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        min-height: auto;
+        padding: 10px;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 125px;
+        object-fit: contain;
+    }
+
+    .product-card h3 {
+        font-size: 14px;
+    }
+
+    .product-card p {
+        font-size: 12px;
+    }
+
+    .product-card button {
+        width: 100%;
+        font-size: 11px;
+        padding: 8px 4px;
+    }
+
+    .product-card a {
+        font-size: 12px;
+    }
+}
